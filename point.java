@@ -12,9 +12,9 @@ public class point
     {
         x2=a;y2=b;
     }
-    double dist()
+    double dist(int a,int b)
     {
-        double s=Math.sqrt(x2*x2+y2*y2);
+        double s=Math.sqrt(Math.pow(x2-a,2)+Math.pow(y2-b,2));
         return s;
     }
 }
